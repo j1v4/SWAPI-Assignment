@@ -1,0 +1,20 @@
+meta {
+  name: luke-film
+  type: http
+  seq: 3
+}
+
+get {
+  url: https://swapi.dev/api/films/1
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
+
+docs {
+  this request retrieves detailed info about a specific star wars movie. I am using it to see a movie that Luke Skywalker played a role in.
+}

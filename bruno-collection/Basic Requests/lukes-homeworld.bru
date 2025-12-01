@@ -1,0 +1,20 @@
+meta {
+  name: lukes-homeworld
+  type: http
+  seq: 3
+}
+
+get {
+  url: https://swapi.dev/api/planets/1
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
+
+docs {
+  this request shows detailed info about characters planet or homeworld in this case its Luke Skywalkers planet Tatooine
+}

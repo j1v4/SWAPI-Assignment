@@ -1,0 +1,24 @@
+meta {
+  name: people-page-1
+  type: http
+  seq: 3
+}
+
+get {
+  url: https://swapi.dev/api/people/?page=1
+  body: none
+  auth: inherit
+}
+
+params:query {
+  page: 1
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
+
+docs {
+  this url (https://swapi.dev/api/people/?page=1) shows info about specific character here it is luke skywolker
+}
