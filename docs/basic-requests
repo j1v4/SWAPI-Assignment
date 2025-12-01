@@ -1,0 +1,96 @@
+# Basic Requests - SWAPI Assignment
+
+## 1. Get first page of people
+- **URL:** `https://swapi.dev/api/people/?page=1`
+- **Method:** GET
+- **Why needed:** To retrieve the list of characters from the first page of SWAPI.
+- **Example response (summarized):**
+```json
+{
+  "count": 82,
+  "next": "https://swapi.dev/api/people/?page=2",
+  "results": [
+    {
+      "name": "Luke Skywalker",
+      "height": "172",
+      "mass": "77",
+      "homeworld": "https://swapi.dev/api/planets/1/"
+    }
+  ]
+}
+Linked fields: homeworld field links to the planet resource.
+
+2. Get Luke Skywalker’s details
+URL: https://swapi.dev/api/people/1
+
+Method: GET
+
+Why needed: To retrieve detailed information about Luke Skywalker.
+
+Example response (summarized):
+
+json
+Copy code
+{
+  "name": "Luke Skywalker",
+  "height": "172",
+  "mass": "77",
+  "homeworld": "https://swapi.dev/api/planets/1/",
+  "films": ["https://swapi.dev/api/films/1/"]
+}
+Linked fields: homeworld links to planet, films links to movies.
+
+3. Get Luke’s homeworld
+URL: https://swapi.dev/api/planets/1
+
+Method: GET
+
+Why needed: To find detailed information about Luke’s home planet.
+
+Example response (summarized):
+
+json
+Copy code
+{
+  "name": "Tatooine",
+  "climate": "arid",
+  "terrain": "desert"
+}
+Linked fields: residents link to characters from the planet.
+
+4. Get a film Luke appears in
+URL: https://swapi.dev/api/films/1
+
+Method: GET
+
+Why needed: To retrieve details of a movie that features Luke Skywalker.
+
+Example response (summarized):
+
+json
+Copy code
+{
+  "title": "A New Hope",
+  "episode_id": 4,
+  "director": "George Lucas",
+  "characters": ["https://swapi.dev/api/people/1/"]
+}
+Linked fields: characters links to people, starships links to starships in the film.
+
+5. Get a starship from the film
+URL: https://swapi.dev/api/starships/12
+
+Method: GET
+
+Why needed: To retrieve information about a starship featured in a film.
+
+Example response (summarized):
+
+json
+Copy code
+{
+  "name": "X-wing",
+  "model": "T-65 X-wing",
+  "crew": "1"
+}
+Linked fields: No direct links, but appears in films resource.
