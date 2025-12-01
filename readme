@@ -1,0 +1,62 @@
+# SWAPI Assignment — API Documentation & Bruno Collection
+
+## Overview
+This project is part of the Sebes API Specialist test assignment. It demonstrates the ability to explore REST API documentation, execute requests, analyze linked resources, handle errors, create a structured Bruno collection, and publish results in a clear GitHub repository.
+
+API used: https://swapi.dev/
+
+## Repository Structure
+├── README.md
+├── bruno-collection/
+│ ├── Basic Requests/
+│ └── Error Cases/
+├── docs/
+│ ├── basic-requests.md
+│ └── error-handling.md
+├── screenshots/
+└── scripts/
+
+
+## How to Use This Repository
+
+### API Documentation  
+See the `docs/` folder for:
+- `basic-requests.md` — all required SWAPI requests  
+- `error-handling.md` — invalid request example  
+
+### Bruno Collection
+`bruno-collection/` contains:
+- Basic Requests — the 5 required API calls  
+- Error Cases — invalid endpoint example  
+
+Import them into Bruno to run all requests.
+
+## Demonstrated SWAPI Request Flow
+1. Get list of characters  
+2. Get Luke Skywalker  
+3. Get his homeworld  
+4. Get a film he appears in  
+5. Get a starship from that film  
+6. Make and analyze an invalid request  
+
+Each request includes:
+- URL & method  
+- Purpose  
+- Response summary  
+- Linked resource explanation  
+
+## Completed Requirements
+- All required endpoints explored  
+- Five basic requests documented  
+- Error request documented  
+- Bruno collection structured into folders  
+- Repository organized according to specification  
+- Clean and clear README.md  
+
+## Notes
+- SWAPI uses URL-based links extensively  
+- Pagination appears in `/people`, `/planets`, `/starships`  
+- 404 returned for incorrect endpoints  
+- Bruno helps organize API request collections  
+
+## May the Force be with you.
