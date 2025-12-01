@@ -1,0 +1,14 @@
+# Error Handling - SWAPI Assignment
+
+## Invalid request example
+
+- **URL:** `https://swapi.dev/api/peoplle/1`
+- **Method:** GET
+- **Why needed:** To demonstrate error handling when using an incorrect endpoint.
+- **Status code:** 404 Not Found
+- **Example response:**
+```json
+{
+  "detail": "Not found"
+}
+Explanation: The endpoint /peoplle/1 is misspelled. The correct endpoint is /people/1.
